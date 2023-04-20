@@ -68,20 +68,21 @@ export const Stage = ({ stageNumber, stageID }) => {
 
   return (
     <div id={stageID}>
-      <div className={`background${stageNumber}`}></div>
-      {[1, 2, 3].map((e) => {
-        return (
-          <div
-            className={`item item${e}`}
-            onClick={foundItem}
-            key={`${stageNumber}.${e}`}
-          ></div>
-        );
-      })}
+      <div className={`background${stageNumber}`}>
+        {[1, 2, 3].map((e) => {
+          return (
+            <div
+              className={`item item${e}`}
+              onClick={foundItem}
+              key={`${stageNumber}.${e}`}
+            ></div>
+          );
+        })}
 
-      <div className="success">
-        <p>SUCCESS</p>
-        <NextBtn />
+        <div className="success">
+          <p>SUCCESS</p>
+          <NextBtn />
+        </div>
       </div>
     </div>
   );
