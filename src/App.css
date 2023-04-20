@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+html {
+  font-size: 16px;
+}
+
+/* 시작화면 */
+#open {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../public/img/opening.png');
+  background-size: cover;
+  padding: 10%;
+}
+.title {
+  height: 20%;
+  margin: 0 auto;
+  font-size: 5em;
+  color: rgb(253, 237, 210);
+  text-align: center;
+  animation: titleMove 1s infinite;
+  
+}
+@keyframes titleMove {
+  0% {
+    padding-top: 0%;
+  } 50% {
+    padding-top: 1.5%;
+  } 100% {
+    padding-top: 0%;
+  }
+}
+.start {
+  width: 150px;
+  font-size: 2rem;
+  font-weight: 700;
+  background: rgb(253, 237, 210);
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  position: absolute;
+  bottom: 30%;
+  left: 45%;
+}
+.manual {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 6%;
+  color: rgb(243, 89, 89);
+  font-weight: normal;
+}
+
+
+/* 스테이지1,2,3 */
+#one, #two, #three {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+}
+#one {
+  background-image: url('../public/img/1.jpg');
+}
+#two {
+  background-image: url('../public/img/2.jpg');
+}
+#three {
+  background-image: url('../public/img/3.jpg');
+}
+.item {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: tomato;
+  transition: transform 0.5s;
+}
+/* stage 1 */
+#one > .item1 {
+  top: 26%;
+  left: 6%;
+}
+#one > .item2 {
+  top:35%;
+  left:50%
+}
+#one > .item3 {
+  top: 69%;
+  left: 81%;
+}
+
+/* stage 2 */
+#two > .item1 {
+  top: 80%;
+  left: 6%;
+}
+#two > .item2 {
+  top: 25%;
+  left:50%
+}
+#two > .item3 {
+  top: 69%;
+  left: 81%;
+}
+
+/* stage 3 */
+#three > .item1 {
+  top: 26%;
+  left: 10%;
+}
+#three > .item2 {
+  top:82%;
+  left:45%
+}
+#three > .item3 {
+  top: 23%;
+  left: 81%;
+}
+
+/* 성공화면 */
+.success {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, .8);
+  position: absolute;
+  padding: 15%;
+  font-size: 4rem;
+  text-align: center;
+  visibility: hidden;
+}
+.success > p {
+  font-weight: 700;
+  margin-bottom: 5%;
+}
+.success > a > button {
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: rgb(253, 237, 210);
+  border: 3px solid rgb(245, 205, 137);;
+  border-radius: 20px;
+  padding: 20px;
+}
