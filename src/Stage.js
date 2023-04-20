@@ -22,6 +22,7 @@ export const Stage = ({ stageNumber, stageID }) => {
         }, 1000);
       } else {
         e.style.transition = onTransition;
+        e.style.color = "white";
       }
     });
   }
@@ -66,6 +67,7 @@ export const Stage = ({ stageNumber, stageID }) => {
 
   return (
     <div id={stageID}>
+      <div className={`background${stageNumber}`}></div>
       {[1, 2, 3].map((e) => {
         return (
           <div
