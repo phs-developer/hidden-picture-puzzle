@@ -19,10 +19,11 @@ export const Stage = ({ stageNumber, stageID }) => {
       if (onVisible === "hidden") {
         setTimeout(() => {
           e.style.transition = onTransition;
+          // e.style.backgroundColor = "tomato";
         }, 1000);
       } else {
         e.style.transition = onTransition;
-        e.style.color = "white";
+        // e.style.backgroundColor = "white";
       }
     });
   }

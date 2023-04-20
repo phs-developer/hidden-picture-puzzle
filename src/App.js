@@ -8,7 +8,7 @@ function App() {
       <div id="open">
         <h1 className="title">
           Hidden Picture Puzzle
-          <div className="manual">동그란 빨간 점을 찾으세요!</div>
+          <div className="manual">동그란 하얀 점을 찾으세요!</div>
         </h1>
         <Link to="1">
           <button className="start" type="button">
