@@ -3,7 +3,7 @@
   
 
 <p>시작화면</p>
-<img src="https://user-images.githubusercontent.com/82524095/233346855-42fab8d9-4d9c-4083-b74f-08e5487d25ea.jpg" style="width: 800px">
+<img src="https://user-images.githubusercontent.com/82524095/233352699-f60827dc-78f3-48d1-9076-58c9f23aecce.jpg" style="width: 800px">
 
 
 <p>성공화면</p>
